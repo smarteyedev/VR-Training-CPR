@@ -20,7 +20,7 @@ namespace Seville
 
         private void Start()
         {
-            if (m_meshRenderer && m_meshRenderer.enabled) m_meshRenderer.enabled = false;
+            // if (m_meshRenderer && m_meshRenderer.enabled) m_meshRenderer.enabled = false;
         }
 
         private void OnTriggerEnter(Collider other)
