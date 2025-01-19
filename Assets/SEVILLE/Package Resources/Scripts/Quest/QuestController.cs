@@ -139,6 +139,8 @@ namespace Seville
                 temp.isTaskState = true;
 
                 questDataTempList[indexItem] = temp;
+
+                dataTarget[indexItem].onTaskIsDone?.Invoke();
             }
 
             if (questDataTempList.All(item => item.isTaskState))

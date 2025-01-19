@@ -83,6 +83,10 @@ public abstract class CounterBase : MonoBehaviour
             currentScore = maxScore;
             Debug.Log("Max score reached.");
             onMaxScoreReached.Invoke();
+
+            OnCounterIsFinished();
+
+            isCountingDown = false;
         }
 
         UpdateScoreText();
@@ -172,4 +176,6 @@ public abstract class CounterBase : MonoBehaviour
     {
         LeanTween.alphaCanvas(progressBarCanvasGroup, 0.3f, blinkSpeed).setLoopPingPong();
     }
+
+    protected virtual void OnCounterIsFinished() { }
 }

@@ -50,6 +50,7 @@ namespace Seville
         public Sprite iconSprite;
         [TextArea]
         public string taskDescriptionText;
+        public UnityEvent onTaskIsDone;
 #if UNITY_EDITOR
         [ReadOnly]
 #endif
@@ -61,6 +62,7 @@ namespace Seville
             this.iconSprite = other.iconSprite;
             this.taskDescriptionText = other.taskDescriptionText;
             this.isTaskState = other.isTaskState;
+            this.onTaskIsDone = other.onTaskIsDone;
         }
     }
 }
