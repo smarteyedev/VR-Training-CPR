@@ -7,24 +7,24 @@ using TMPro;
 public abstract class CounterBase : MonoBehaviour
 {
     [Header("Scoring System")]
-    public int maxScore = 100; // Nilai maksimal target
-    protected int currentScore = 0; // Nilai saat ini
+    public int maxScore = 100;
+    protected int currentScore = 0;
 
     [Header("Countdown Timer")]
-    public float countdownDuration = 60f; // Durasi countdown dalam detik
+    public float countdownDuration = 60f;
     protected float currentTime;
     protected bool isCountingDown = false;
-    protected bool canScore = true; // Kondisi apakah player bisa mendapatkan skor
+    protected bool canScore = true;
 
     [Header("UI Elements")]
-    public Slider progressBar; // Slider untuk progress bar countdown
-    public CanvasGroup progressBarCanvasGroup; // Referensi ke CanvasGroup dari progress bar
-    public Image progressBarFill; // Referensi untuk warna progress bar
-    public TextMeshProUGUI scoreText; // Text untuk menampilkan skor
+    public Slider progressBar;
+    public CanvasGroup progressBarCanvasGroup;
+    public Image progressBarFill;
+    public TextMeshProUGUI scoreText;
 
     [Header("Events")]
-    public UnityEvent onMaxScoreReached; // Event saat nilai maksimal tercapai
-    public UnityEvent onCountdownFinished; // Event saat waktu habis
+    public UnityEvent onMaxScoreReached;
+    public UnityEvent onCountdownFinished;
 
     private bool isBlinking = false;
 
@@ -40,7 +40,7 @@ public abstract class CounterBase : MonoBehaviour
         }
 
         UpdateProgressBarColor();
-        StartCountdown();
+        // StartCountdown();
     }
 
     protected virtual void Update()

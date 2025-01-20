@@ -70,6 +70,7 @@ namespace Seville
     public class CarouselGaleryData
     {
         public Sprite imageSprite;
+        public string title;
         [TextArea(3, 10)]
         public string descriptionImage;
         [HideInInspector] public bool hasShow = false;

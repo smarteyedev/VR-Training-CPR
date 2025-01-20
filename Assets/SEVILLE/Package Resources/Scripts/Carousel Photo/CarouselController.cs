@@ -18,6 +18,7 @@ namespace Seville
         [Header("Carousel Controller")]
         public bool editCarouselController;
         [SerializeField] private Image _displayImage;
+        [SerializeField] private TextMeshProUGUI _textTitle;
         [SerializeField] private TextMeshProUGUI _textDescription;
         [SerializeField] private Transform _dotContainer;
         [SerializeField] private GameObject _dotPrefab;
@@ -153,6 +154,7 @@ namespace Seville
         private void OnChangeBody()
         {
             _displayImage.sprite = _carouselConfiguration.carouselData[_currentIndex].imageSprite;
+            _textTitle.text = _carouselConfiguration.carouselData[_currentIndex].title;
             _textDescription.text = _carouselConfiguration.carouselData[_currentIndex].descriptionImage;
             isTransitioning = false;
 
