@@ -5,13 +5,13 @@ public class CustomAudioManager : MonoBehaviour
 {
     public static CustomAudioManager Instance;
 
-    [Header("Audio Sources")]
-    public AudioSource musicSource;
-    public AudioSource sfxSource;
-
     [Header("Audio Libraries")]
     public List<AudioClip> musicClips;
     public List<AudioClip> sfxClips;
+
+    [Header("Audio Sources")]
+    public AudioSource musicSource;
+    public AudioSource sfxSource;
 
     private Dictionary<string, AudioClip> musicLibrary = new Dictionary<string, AudioClip>();
     private Dictionary<string, AudioClip> sfxLibrary = new Dictionary<string, AudioClip>();

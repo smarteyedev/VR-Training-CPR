@@ -6,6 +6,7 @@ using TMPro;
 
 public abstract class CounterBase : MonoBehaviour
 {
+
     [Header("Scoring System")]
     public int maxScore = 100;
     protected int currentScore = 0;
@@ -13,8 +14,7 @@ public abstract class CounterBase : MonoBehaviour
     [Header("Countdown Timer")]
     public float countdownDuration = 60f;
     protected float currentTime;
-    protected bool isCountingDown = false;
-    protected bool canScore = true;
+    [SerializeField] protected bool isCountingDown = false;
 
     [Header("UI Elements")]
     public Slider progressBar;
@@ -30,7 +30,9 @@ public abstract class CounterBase : MonoBehaviour
 
     protected virtual void Start()
     {
-        ResetCountdown();
+        currentTime = countdownDuration;
+        currentScore = 0;
+
         UpdateScoreText();
 
         if (progressBar != null)
@@ -40,7 +42,6 @@ public abstract class CounterBase : MonoBehaviour
         }
 
         UpdateProgressBarColor();
-        // StartCountdown();
     }
 
     protected virtual void Update()
@@ -52,7 +53,6 @@ public abstract class CounterBase : MonoBehaviour
             {
                 currentTime = 0;
                 isCountingDown = false;
-                canScore = false; // Player tidak dapat skor setelah countdown selesai
                 Debug.Log("Countdown finished.");
                 onCountdownFinished.Invoke();
             }
@@ -69,7 +69,7 @@ public abstract class CounterBase : MonoBehaviour
 
     public virtual void AddScore(int score)
     {
-        if (!canScore)
+        if (!isCountingDown)
         {
             Debug.Log("Cannot add score, countdown has finished.");
             return;
@@ -95,14 +95,13 @@ public abstract class CounterBase : MonoBehaviour
     public virtual void StartCountdown()
     {
         isCountingDown = true;
-        canScore = true; // Reset kondisi untuk bisa mendapatkan skor
     }
 
     public virtual void ResetCountdown()
     {
         currentTime = countdownDuration;
+        currentScore = 0;
         isCountingDown = false;
-        canScore = true; // Reset kondisi untuk bisa mendapatkan skor
         Debug.Log("Countdown reset.");
 
         // Reset progress bar
