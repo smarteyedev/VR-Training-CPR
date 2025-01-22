@@ -7,6 +7,9 @@ namespace Seville
 {
     public class XRGrabInteractableTwoAttach : XRGrabInteractable
     {
+        [Header("Custom Properties")]
+        [SerializeField] private Vector3 initialPosition;
+        [SerializeField] private Quaternion initialRotation;
         public string objName;
         public Transform rightAttachTransform;
         public Transform leftAttachTransform;
@@ -47,6 +50,12 @@ namespace Seville
 
             if (isFreezeOnRigidbody)
                 rb.constraints = RigidbodyConstraints.FreezeAll;
+        }
+
+        public void ResetToInitialTransform()
+        {
+            this.transform.position = initialPosition;
+            this.transform.rotation = initialRotation;
         }
     }
 }
