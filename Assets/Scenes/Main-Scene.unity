@@ -1018,7 +1018,7 @@ GameObject:
   - component: {fileID: 107555120}
   - component: {fileID: 107555119}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Btn-start-training
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1145,6 +1145,30 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1388772953}
+        m_TargetAssemblyTypeName: CustomAudioManager, Assembly-CSharp
+        m_MethodName: PlayMusic
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: BGM-heavy-breathing
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1388772953}
+        m_TargetAssemblyTypeName: CustomAudioManager, Assembly-CSharp
+        m_MethodName: SetMusicVolume
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0.5
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
@@ -2972,7 +2996,19 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: suara telefon emergency
+          m_StringArgument: SFX-telefon-emergency
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1388772953}
+        m_TargetAssemblyTypeName: CustomAudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SFX-breath
           m_BoolArgument: 1
         m_CallState: 2
   SecondAction:
@@ -3219,7 +3255,7 @@ Transform:
   m_GameObject: {fileID: 212802074}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.21, y: -0.12, z: -2.429}
+  m_LocalPosition: {x: 0.52, y: -0.573, z: -2.429}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3260,7 +3296,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2
+  m_Intensity: 3
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -3476,6 +3512,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 217235602}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4434,7 +4482,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: Anda terlambat melakukan tindakan pengecekan, lakukan tindakan dalam kurun
-    waktu kurang dari 1 menit
+    waktu kurang dari 20 Detik
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 223c47386b7fc574cb16e09a7e5e9e0a, type: 2}
   m_sharedMaterial: {fileID: -3871215310759483734, guid: 223c47386b7fc574cb16e09a7e5e9e0a,
@@ -5984,6 +6032,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 699574266777413305}
+        m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &380977471
 MonoBehaviour:
@@ -7668,6 +7728,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 524073571}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -9940,7 +10012,7 @@ Transform:
   m_GameObject: {fileID: 630075743}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.56, y: -0.12, z: -2.429}
+  m_LocalPosition: {x: -2.56, y: -0.48, z: -2.429}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9981,7 +10053,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2
+  m_Intensity: 3
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -10968,6 +11040,18 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1388772953}
+        m_TargetAssemblyTypeName: CustomAudioManager, Assembly-CSharp
+        m_MethodName: SetMusicVolume
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0.01
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -13777,7 +13861,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxScore: 2
-  countdownDuration: 25
+  countdownDuration: 20
   isCountingDown: 0
   progressBar: {fileID: 1186795547}
   progressBarCanvasGroup: {fileID: 1424793732}
@@ -13948,7 +14032,7 @@ Transform:
   m_GameObject: {fileID: 1001283817}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.14, y: -0.49, z: -0.55}
+  m_LocalPosition: {x: -4.14, y: -0.63, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13989,7 +14073,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1.21
+  m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -14197,7 +14281,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -16039,7 +16123,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.78
+  m_Intensity: 1.3
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -19820,9 +19904,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7c1a34a8940e124383c741cb4fa090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicClips: []
+  musicClips:
+  - {fileID: 8300000, guid: 7625097d76de1e24eb20e2ddac11ebfe, type: 3}
+  - {fileID: 8300000, guid: 7269cb8be1143804b9f2edbf7043bd22, type: 3}
   sfxClips:
   - {fileID: 8300000, guid: 8b4f34d8a185e8e4b9fff041584af2f1, type: 3}
+  - {fileID: 8300000, guid: b8f84e1a57cf841448116dbb758c9999, type: 3}
+  - {fileID: 8300000, guid: 7c16ebb3f1e629d46a3d7d0023b40e89, type: 3}
   musicSource: {fileID: 1025212502}
   sfxSource: {fileID: 1743925051}
 --- !u!1 &1394384581
@@ -21564,6 +21652,86 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7981829027518660319, guid: e367714f162349d48a5cb6f00133e149,
+        type: 3}
+      propertyPath: OnFadeOutScreenOut.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7981829027518660319, guid: e367714f162349d48a5cb6f00133e149,
+        type: 3}
+      propertyPath: OnFadeOutScreenOut.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7981829027518660319, guid: e367714f162349d48a5cb6f00133e149,
+        type: 3}
+      propertyPath: OnFadeOutScreenOut.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7981829027518660319, guid: e367714f162349d48a5cb6f00133e149,
+        type: 3}
+      propertyPath: OnFadeOutScreenOut.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1388772953}
+    - target: {fileID: 7981829027518660319, guid: e367714f162349d48a5cb6f00133e149,
+        type: 3}
+      propertyPath: OnFadeOutScreenOut.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1388772953}
+    - target: {fileID: 7981829027518660319, guid: e367714f162349d48a5cb6f00133e149,
+        type: 3}
+      propertyPath: OnFadeOutScreenOut.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7981829027518660319, guid: e367714f162349d48a5cb6f00133e149,
+        type: 3}
+      propertyPath: OnFadeOutScreenOut.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7981829027518660319, guid: e367714f162349d48a5cb6f00133e149,
+        type: 3}
+      propertyPath: OnFadeOutScreenOut.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 7981829027518660319, guid: e367714f162349d48a5cb6f00133e149,
+        type: 3}
+      propertyPath: OnFadeOutScreenOut.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetMusicVolume
+      objectReference: {fileID: 0}
+    - target: {fileID: 7981829027518660319, guid: e367714f162349d48a5cb6f00133e149,
+        type: 3}
+      propertyPath: OnFadeOutScreenOut.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CustomAudioManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7981829027518660319, guid: e367714f162349d48a5cb6f00133e149,
+        type: 3}
+      propertyPath: OnFadeOutScreenOut.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: CustomAudioManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7981829027518660319, guid: e367714f162349d48a5cb6f00133e149,
+        type: 3}
+      propertyPath: OnFadeOutScreenOut.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7981829027518660319, guid: e367714f162349d48a5cb6f00133e149,
+        type: 3}
+      propertyPath: OnFadeOutScreenOut.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: BGM-Serious
+      objectReference: {fileID: 0}
+    - target: {fileID: 7981829027518660319, guid: e367714f162349d48a5cb6f00133e149,
+        type: 3}
+      propertyPath: OnFadeOutScreenOut.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: BGM-Serious
+      objectReference: {fileID: 0}
+    - target: {fileID: 7981829027518660319, guid: e367714f162349d48a5cb6f00133e149,
+        type: 3}
+      propertyPath: OnFadeOutScreenOut.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7981829027518660319, guid: e367714f162349d48a5cb6f00133e149,
+        type: 3}
+      propertyPath: OnFadeOutScreenOut.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22373,7 +22541,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: Anda terlambat melakukan tindakan pengecekan, lakukan tindakan dalam kurun
-    waktu kurang dari 1 menit
+    waktu kurang dari 20 detik
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 223c47386b7fc574cb16e09a7e5e9e0a, type: 2}
   m_sharedMaterial: {fileID: -3871215310759483734, guid: 223c47386b7fc574cb16e09a7e5e9e0a,
@@ -23103,7 +23271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxScore: 2
-  countdownDuration: 60
+  countdownDuration: 20
   isCountingDown: 0
   progressBar: {fileID: 987283496}
   progressBarCanvasGroup: {fileID: 2019528588}
@@ -24989,7 +25157,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -30986,7 +31154,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 0.08160334, y: 0.103728406, z: 0.06034769}
   m_Center: {x: 0.000069837355, y: -0.011566478, z: -0.015493243}
@@ -33810,6 +33978,30 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
+        - m_Target: {fileID: 2028804474}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 1388772953}
+          m_TargetAssemblyTypeName: CustomAudioManager, Assembly-CSharp
+          m_MethodName: PlaySFX
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: SFX Popup
+            m_BoolArgument: 1
+          m_CallState: 2
     isTaskState: 0
   - taskTitleText: Mengkondisikan Situasi Sekitar
     iconSprite: {fileID: 0}
@@ -33901,6 +34093,42 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
+        - m_Target: {fileID: 1388772953}
+          m_TargetAssemblyTypeName: CustomAudioManager, Assembly-CSharp
+          m_MethodName: PlayMusic
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: BGM-Serious
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 1388772953}
+          m_TargetAssemblyTypeName: CustomAudioManager, Assembly-CSharp
+          m_MethodName: SetMusicVolume
+          m_Mode: 4
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0.08
+            m_StringArgument: BGM-Serious
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 1388772953}
+          m_TargetAssemblyTypeName: CustomAudioManager, Assembly-CSharp
+          m_MethodName: PlaySFX
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0.08
+            m_StringArgument: SFX Popup
+            m_BoolArgument: 1
+          m_CallState: 2
     isTaskState: 0
   - taskTitleText: Pemeriksaan Respons Pasien
     iconSprite: {fileID: 0}
@@ -33980,6 +34208,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
+        - m_Target: {fileID: 1388772953}
+          m_TargetAssemblyTypeName: CustomAudioManager, Assembly-CSharp
+          m_MethodName: PlaySFX
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: SFX Popup
+            m_BoolArgument: 1
+          m_CallState: 2
     isTaskState: 0
   - taskTitleText: Mengecheck Nadi
     iconSprite: {fileID: 0}
@@ -34021,6 +34261,18 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1388772953}
+          m_TargetAssemblyTypeName: CustomAudioManager, Assembly-CSharp
+          m_MethodName: PlaySFX
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: SFX Popup
             m_BoolArgument: 0
           m_CallState: 2
     isTaskState: 0
@@ -34102,6 +34354,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
+        - m_Target: {fileID: 1388772953}
+          m_TargetAssemblyTypeName: CustomAudioManager, Assembly-CSharp
+          m_MethodName: PlaySFX
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: SFX Popup
+            m_BoolArgument: 1
+          m_CallState: 2
     isTaskState: 0
   - taskTitleText: Lakukan Tindakan Kompresi Dada
     iconSprite: {fileID: 0}
@@ -34132,6 +34396,30 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 1388772953}
+          m_TargetAssemblyTypeName: CustomAudioManager, Assembly-CSharp
+          m_MethodName: PlaySFX
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: SFX Popup
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 1388772953}
+          m_TargetAssemblyTypeName: CustomAudioManager, Assembly-CSharp
+          m_MethodName: SetMusicVolume
+          m_Mode: 4
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0.5
+            m_StringArgument: SFX Popup
             m_BoolArgument: 1
           m_CallState: 2
     isTaskState: 0
@@ -34176,6 +34464,18 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1388772953}
+          m_TargetAssemblyTypeName: CustomAudioManager, Assembly-CSharp
+          m_MethodName: PlaySFX
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: SFX Popup
             m_BoolArgument: 0
           m_CallState: 2
     isTaskState: 0
@@ -35808,6 +36108,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: ChestPress
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1388772953}
+        m_TargetAssemblyTypeName: CustomAudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SFX-breath
           m_BoolArgument: 0
         m_CallState: 2
   onInvalidHandTouching:

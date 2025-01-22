@@ -52,7 +52,7 @@ public class TimeCounter : MonoBehaviour
         if (timerText != null)
         {
             // Format waktu hanya dalam detik (dengan 2 desimal)
-            timerText.text = $"{elapsedTime:F1} seconds";
+            timerText.text = $"{elapsedTime:F1} detik";
         }
     }
 
