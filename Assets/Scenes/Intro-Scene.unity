@@ -234,7 +234,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 353}
-  m_SizeDelta: {x: 643.57, y: 50}
+  m_SizeDelta: {x: 867.53, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &25855727
 MonoBehaviour:
@@ -256,9 +256,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'SELAMAT DATANG
+  m_text: 'SELAMAT DATANG DI
 
-    DI PELATIHAN TRAINING CPR'
+    PELATIHAN CPR (CARDIOPULMONARY RESUSCITATION)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff62569cd4230964a9ba44ba5232123a, type: 2}
   m_sharedMaterial: {fileID: -7409644834274338699, guid: ff62569cd4230964a9ba44ba5232123a,
@@ -445,7 +445,7 @@ GameObject:
   - component: {fileID: 107555120}
   - component: {fileID: 107555119}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Btn-Play
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1465,7 +1465,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: MULAI SIMULASI
+  m_text: MULAI PELATIHAN
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2724,7 +2724,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2820,7 +2820,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21d7345dcc24ba645acd35689df59019, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicSounds: []
+  musicSounds:
+  - name: Theme
+    clip: {fileID: 8300000, guid: 24f2f0036707d5f478236df932380342, type: 3}
   sfxSounds: []
   musicSource: {fileID: 323578355}
   sfxSource: {fileID: 323578354}
@@ -3901,7 +3903,7 @@ PrefabInstance:
     - target: {fileID: 9011377768165527023, guid: 5f016282cc41fc04da9148599663d410,
         type: 3}
       propertyPath: carouselData.Array.size
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9011377768165527023, guid: 5f016282cc41fc04da9148599663d410,
         type: 3}
@@ -3916,7 +3918,7 @@ PrefabInstance:
     - target: {fileID: 9011377768165527023, guid: 5f016282cc41fc04da9148599663d410,
         type: 3}
       propertyPath: carouselData.Array.data[2].title
-      value: Langkah Sederhana Melakukan CPR
+      value: Cara Melakukan CPR
       objectReference: {fileID: 0}
     - target: {fileID: 9011377768165527023, guid: 5f016282cc41fc04da9148599663d410,
         type: 3}
@@ -3932,7 +3934,7 @@ PrefabInstance:
         type: 3}
       propertyPath: carouselData.Array.data[0].imageSprite
       value: 
-      objectReference: {fileID: 21300000, guid: f488ddff70b860c448f1bcb4b94fe53a,
+      objectReference: {fileID: 21300000, guid: f371a1c199fd9fc4e8cc331a8bad110f,
         type: 3}
     - target: {fileID: 9011377768165527023, guid: 5f016282cc41fc04da9148599663d410,
         type: 3}
@@ -3956,7 +3958,7 @@ PrefabInstance:
         type: 3}
       propertyPath: carouselData.Array.data[4].imageSprite
       value: 
-      objectReference: {fileID: 21300000, guid: f371a1c199fd9fc4e8cc331a8bad110f,
+      objectReference: {fileID: 21300000, guid: f488ddff70b860c448f1bcb4b94fe53a,
         type: 3}
     - target: {fileID: 9011377768165527023, guid: 5f016282cc41fc04da9148599663d410,
         type: 3}
